@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/kium_system/static/css/main.18f48107.chunk.css",
+    "main.js": "/kium_system/static/js/main.61986c3b.chunk.js",
+    "main.js.map": "/kium_system/static/js/main.61986c3b.chunk.js.map",
+    "runtime-main.js": "/kium_system/static/js/runtime-main.82cb9e55.js",
+    "runtime-main.js.map": "/kium_system/static/js/runtime-main.82cb9e55.js.map",
+    "static/js/2.0fb0bba0.chunk.js": "/kium_system/static/js/2.0fb0bba0.chunk.js",
+    "static/js/2.0fb0bba0.chunk.js.map": "/kium_system/static/js/2.0fb0bba0.chunk.js.map",
+    "index.html": "/kium_system/index.html",
+    "precache-manifest.e10d2b917a4bbf6b71632ab654a7d383.js": "/kium_system/precache-manifest.e10d2b917a4bbf6b71632ab654a7d383.js",
+    "service-worker.js": "/kium_system/service-worker.js",
+    "static/css/main.18f48107.chunk.css.map": "/kium_system/static/css/main.18f48107.chunk.css.map",
+    "static/js/2.0fb0bba0.chunk.js.LICENSE.txt": "/kium_system/static/js/2.0fb0bba0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.82cb9e55.js",
+    "static/js/2.0fb0bba0.chunk.js",
+    "static/css/main.18f48107.chunk.css",
+    "static/js/main.61986c3b.chunk.js"
+  ]
+}
