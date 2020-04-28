@@ -12,9 +12,9 @@ function Set() {
     const dispatch = useDispatch();
   return (
     <div class="h-screen bg-white-100 pt-8 items-center">
-            <p>이름을 입력해주세요</p>
-            <p class="mb-8"><input name="target" class="text-3xl py-2 text-1xl w-full" type="text" placeholder="홍길동" onChange={onChangename} /></p>
-            <Link class="bg-gray-200 px-48 py-2" to="/" onClick={() => dispatch(add(name))}>이름 등록하기</Link> 
+            <p style={{display:"block"}} class="text-center mx-auto pb-4">이름을 입력해주세요</p>
+            <input style={{display:"block"}} name="target" class="py-auto mx-auto text-3xl py-2 w-5/6 border-2 text-center" type="text" placeholder="홍길동" onChange={onChangename} />
+            <Link style={{display:"block"}} class="mt-4 bg-gray-200 w-3/4 mx-auto text-center py-2" to="/" onClick={() => dispatch(add(name))}>이름 등록하기</Link> 
     </div>
   );
 }

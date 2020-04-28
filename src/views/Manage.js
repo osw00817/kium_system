@@ -22,10 +22,9 @@ function List() {
   return (
     <div>
       {info.map(x=>
-        <Link class="mx-auto h-16 w-full bg-gray-300 flex flex-row my-8" to={`/manage/${x.id}`}>
-          <div class="w-1/6 text-center">{x.id}</div>
-          <div class="w-2/3">{x.name}</div>
-          <div class="w-2/4 text-right pr-8">{x.date}</div>
+        <Link style={{display:"block"}} class="mx-auto h-16 w-5/6 bg-gray-300 flex flex-row my-4" to={`/manage/${x.id}`}>
+          <p class="py-auto">{x.name}</p>
+            <p class="py-auto">{x.date}</p>
         </Link>
       )}
    </div>
@@ -42,9 +41,16 @@ function Allow({match}) {
   },[]);
   return (
     <div>
-      <p>{info.name}님께서 {info.money}원을 내셧습니까?</p>
-      <Link to="/manage" onClick={() => post(true)}>승인</Link>
-      <Link to="/manage" onClick={() => post(false)}>불허</Link>
+      <p class="text-center pt-16 text-xl text-bold">{info.name}님께서 {info.money}원을 내셧습니까?</p>
+      <div class="mx-auto flex flex-row mt-24">
+      <div class="w-1/2 h-12">
+        <Link style={{display:"block"}} class="mx-auto h-12 w-1/2 bg-blue-300 text-center" to="/manage" onClick={() => post(true)}>승인
+        </Link>
+      </div>
+      <div class="w-1/2 h-12">
+        <Link style={{display:"block"}} class="mx-auto h-12 w-1/2 bg-red-300 text-center" to="/manage" onClick={() => post(false)}>불허</Link>
+      </div>
+      </div>
    </div>
   )
 }
